@@ -59,7 +59,7 @@ use Illuminate\Support\Facades\Route;
 // Start Site Frontend Route
 Route::get('/', [HomeController::class, 'index'])->name('homepage')->middleware('XSS');
 
-Route::post('message', [App\Http\Controllers\Frontend\Landing\MessageController::class, 'store'])
+Route::post('message', [App\Http\Controllers\Frontend\MessageController::class, 'store'])
     ->name('message.store')->middleware('XSS');
 
 Route::middleware(['XSS'])->group(function () {
