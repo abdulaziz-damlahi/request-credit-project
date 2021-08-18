@@ -85,4 +85,8 @@ class HomeController extends Controller
             'faq_section', 'faqs', 'prices', 'contact_section', 'contacts', 'pages'));
     }
 
+    public function text(){
+        return view('frontend.home.text');
+
+    }
 }

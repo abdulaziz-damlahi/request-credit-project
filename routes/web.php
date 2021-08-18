@@ -55,7 +55,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+Route::get('/text', [HomeController::class, 'text'])->name('text');
 // Start Site Frontend Route
 Route::get('/', [HomeController::class, 'index'])->name('homepage')->middleware('XSS');
 

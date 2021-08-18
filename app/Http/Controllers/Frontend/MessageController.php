@@ -16,27 +16,40 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
+        $inputs=$request;
         // Form validation
         $request->validate([
             'name'   =>  'required|max:255',
             'email'   =>  'required|max:255',
-            'subject'   =>  'required|max:255',
-            'message'   =>  'required|max:500',
+            'message'   =>  'required|max:1000',
+            'TC'   =>  'required',
+            'date'   =>  'required',
+            'number'   =>  'required',
+            'job'   =>  'required',
+            'salary'   =>  'required',
+            'kredi'   =>  'required',
+            'iban'   =>  'required',
+            'aytaksit'   =>  'required',
+            'CreditType'   =>  'required',
+            'address'   =>  'required',
         ]);
+        if ($inputs->OK=='on'){
+            // Get All Request
+            $input = $inputs->all();
+            $compine = "      - TC:".$inputs->TC ."      - Doğum Tarihi: ". $inputs->date ."      -İletişim Numarası: ". $inputs->number  ."      - Meslek: ". $inputs->job ."      - Aylık Net Gelir: ". $inputs->salary ."      - Kullandığınız Banka: ". $inputs->bank
+                ."      - Kredi Miktarı: ".$inputs->kredi ."      - Kredinin Aktarılacağı Iban: ". $inputs->iban ."      - Vade: ".$inputs->aytaksit  ."      - Kredi Türü: ". $inputs->CreditType  ;
+            $address = "      - adres: ". $inputs->address   ;
+                Message::firstOrCreate([
+                'name' => $input['name'],
+                'email' => $input['email'],
+                'subject' => $address,
+                'message' => $compine,
+            ]);
+            return redirect()->to('/'.'#contact')
+                ->with('success', 'frontend.your_message_has_been_delivered');
+        }else  return redirect()->to('/'.'#contact')
+            ->with('success', 'lütfen şartları kabul edin');
 
-        // Get All Request
-        $input = $request->all();
-
-        // Record to database
-        Message::firstOrCreate([
-            'name' => $input['name'],
-            'email' => $input['email'],
-            'subject' => $input['subject'],
-            'message' => $input['message'],
-        ]);
-
-        return redirect()->to('/'.'#contact')
-            ->with('success', 'frontend.your_message_has_been_delivered');
     }
 
 }

@@ -143,9 +143,7 @@
                                 <span class="bar2"></span>
                                 <span class="bar3"></span>
                             </div>
-                            <div class="show-searchbox">
-                                <a href="#"><i class="webex-icon-Search"></i></a>
-                            </div>
+
                             <div class="toggle-searchbox">
                                 <form id="searchform-all" action="{{ route('blog-page.search') }}" method="POST">
                                     @csrf
@@ -206,12 +204,15 @@
                         <div class="main-menu f-right">
                             <nav id="mobile-menu-right">
                                 <ul class="one-pagenav">
-                                    <li><a href="#home" data-scroll-nav="0"style="padding-left: 40px"><i class="fa fa-home" ></i>  {{ __('frontend.home') }}</a></li>
+                                    <li><a href="#home" data-scroll-nav="0" style="padding-left: 40px"><i
+                                                class="fa fa-home"></i> {{ __('frontend.home') }}</a></li>
                                     @if ($section_arr['about_section'] == 1)
-                                        <li><a href="#about" data-scroll-nav="1"style="padding-left: 40px"><i class="fa fa-info-circle"></i>  {{ __('frontend.about') }}</a>
+                                        <li><a href="#about" data-scroll-nav="1" style="padding-left: 40px"><i
+                                                    class="fa fa-info-circle"></i> {{ __('frontend.about') }}</a>
                                         </li> @endif
                                     @if ($section_arr['contact_section'] == 1)
-                                        <li><a href="#contact" data-scroll-nav="6"style="padding-left: 40px"><i class="fa fa-at" ></i>  {{ __('frontend.contact') }}</a>
+                                        <li><a href="#contact" data-scroll-nav="6" style="padding-left: 40px"><i
+                                                    class="fa fa-at"></i> {{ __('frontend.contact') }}</a>
                                         </li> @endif
 
                                 </ul>
@@ -224,7 +225,6 @@
     </div>
 </header>
 <!-- header End -->
-
 
 
 <!-- Home Slider Start -->
@@ -378,51 +378,11 @@
     @else
         <section id="about" class="about-section minus-mrb-30">
             <div class="container">
-                {{--                <div class="row mrt-0 mrb-110">--}}
-                {{--                    <div class="col-md-6 col-lg-6 col-xl-3">--}}
-                {{--                        <div class="funfact mrb-30">--}}
-                {{--                            <div class="icon">--}}
-                {{--                                <span class="webexflaticon flaticon-man-2"></span>--}}
-                {{--                            </div>--}}
-                {{--                            <h2 class="counter">1450</h2>--}}
-                {{--                            <h5 class="title">Happy Customers</h5>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                    <div class="col-md-6 col-lg-6 col-xl-3">--}}
-                {{--                        <div class="funfact mrb-lg-30 mrb-60">--}}
-                {{--                            <div class="icon">--}}
-                {{--                                <span class="webexflaticon flaticon-like-3"></span>--}}
-                {{--                            </div>--}}
-                {{--                            <h2 class="counter">1864</h2>--}}
-                {{--                            <h5 class="title">Peoples Likes</h5>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                    <div class="col-md-6 col-lg-6 col-xl-3">--}}
-                {{--                        <div class="funfact mrb-lg-30 mrb-60">--}}
-                {{--                            <div class="icon">--}}
-                {{--                                <span class="webexflaticon flaticon-trophy-1"></span>--}}
-                {{--                            </div>--}}
-                {{--                            <h2 class="counter">1280</h2>--}}
-                {{--                            <h5 class="title">Awards Achieved</h5>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                    <div class="col-md-6 col-lg-6 col-xl-3">--}}
-                {{--                        <div class="funfact mrb-lg-30 mrb-60">--}}
-                {{--                            <div class="icon">--}}
-                {{--                                <span class="webexflaticon flaticon-briefcase-1"></span>--}}
-                {{--                            </div>--}}
-                {{--                            <h2 class="counter">32</h2>--}}
-                {{--                            <h5 class="title">Experiences</h5>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                </div>--}}
             </div>
         </section>
     @endif
 @endif
 <!-- About Section End -->
-
-
 
 
 <!-- Contact Section Start -->
@@ -468,40 +428,217 @@
                     <div class="col-lg-7 col-xl-7">
                         <!-- Include Alert Blade -->
                         @include('admin.alert.alert')
-                        <div class="contact-form">
+                        <div class="`contact`-form">
                             <form action="{{ route('message.store') }}" method="POST">
                                 @csrf
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group mrb-25">
-                                            <input type="text" name="name" class="form-control"
-                                                   placeholder="{{ __('frontend.name') }}" required>
+                                            <input type="text" name="name" id="name" class="form-control"
+                                                   placeholder="Ad Soyad" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group mrb-25">
-                                            <input type="email" name="email" class="form-control"
-                                                   placeholder="{{ __('frontend.email') }}" required>
+                                            <input type="number" name="TC" id="TC" class="form-control"
+                                                   placeholder="T.C.Kimlik Numarası" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mrb-25">
+                                            <input type="date" name="date" id="date" class="form-control"
+                                                   placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mrb-25">
+                                            <input type="number" name="number" class="form-control"
+                                                   placeholder="İletişim Numarası" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mrb-25">
+                                            <input type="text" name="job" id="job" class="form-control"
+                                                   placeholder="Meslek" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mrb-25">
+                                            <input type="number" name="salary" id="salary" class="form-control"
+                                                   placeholder="Aylık Net Gelir" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mrb-25">
+                                            <textarea id="text" name="address" itemid="address" placeholder="adres" rows="4" cols="37" style="border:1px solid grey;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mrb-25">
+                                            <input type="email" name="email" id="email" class="form-control"
+                                                   placeholder="E-Posta" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
+                                        <select class="form-select form-select-lg mb-12 col-lg-12" aria-label=".form-select-lg example" style="background-color: white;border:1px solid grey;" name="bank" id="bank"  >
+                                            <option value="Adabank">Adabank</option>
+                                            <option value="Akbank">Akbank</option>
+                                            <option value="Albaraka Türk Katılım Bankası">Albaraka Türk Katılım Bankası</option>
+                                            <option value="Alternatif Bank">Alternatif Bank</option>
+                                            <option value="Anadolubank">Anadolubank</option>
+                                            <option value="Arap Türk Bankası">Arap Türk Bankası</option>
+                                            <option value="Bank Asya">Bank Asya</option>
+                                            <option value="Bank Mellat">Bank Mellat</option>
+                                            <option value="Bank of Tokyo-Mitsubishi UFJ Turkey">Bank of Tokyo-Mitsubishi UFJ Turkey</option>
+                                            <option value="Birleşik Fon Bankası">Birleşik Fon Bankası</option>
+                                            <option value="Burgan Bank">Burgan Bank</option>
+                                            <option value="Citibank">Citibank</option>
+                                            <option value="Denizbank">Denizbank</option>
+                                            <option value="Deutsche Bank">Deutsche Bank</option>
+                                            <option value="Fibabanka">Fibabanka</option>
+                                            <option value="Finans Bank">Finans Bank</option>
+                                            <option value="Habib Bank Limited">Habib Bank Limited</option>
+                                            <option value="HSBC">HSBC</option>
+                                            <option value="ING Bank">ING Bank</option>
+                                            <option value="Intesa Sanpaolo">Intesa Sanpaolo</option>
+                                            <option value="JP Morgan Chase Bank">JP Morgan Chase Bank</option>
+                                            <option value="Kuveyt Türk Katılım Bankası">Kuveyt Türk Katılım Bankası</option>
+                                            <option value="Odeabank">Odeabank</option>
+                                            <option value="Rabobank">Rabobank</option>
+                                            <option value="Société Générale">Société Générale</option>
+                                            <option value="T-Bank">T-Bank</option>
+                                            <option value="Tekstilbank">Tekstilbank</option>
+                                            <option value="The Royal Bank of Scotland">The Royal Bank of Scotland</option>
+                                            <option value="Turkish Bank">Turkish Bank</option>
+                                            <option value="Türk Ekonomi Bankası">Türk Ekonomi Bankası</option>
+                                            <option value="Türkiye Cumhuriyeti Ziraat Bankası">Türkiye Cumhuriyeti Ziraat Bankası</option>
+                                            <option value="Türkiye Finans Katılım Bankası">Türkiye Finans Katılım Bankası</option>
+                                            <option value="Türkiye Garanti Bankası">Türkiye Garanti Bankası</option>
+                                            <option value="Türkiye Halk Bankası">Türkiye Halk Bankası</option>
+                                            <option value="Türkiye İş Bankası">Türkiye İş Bankası</option>
+                                            <option value="Türkiye Vakıflar Bankası">Türkiye Vakıflar Bankası</option>
+                                            <option value="Yapı ve Kredi Bankası">Yapı ve Kredi Bankası</option>
+                                            <option value="Şekerbank">Şekerbank</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="col-lg-6">
                                         <div class="form-group mrb-25">
-                                            <input type="text" name="subject" class="form-control"
-                                                   placeholder="{{ __('frontend.subject') }}" required>
+                                            <input type="number" name="kredi" id="kredi" class="form-control"
+                                                   placeholder="Kredi Miktarı" required>
                                         </div>
                                     </div>
+                                    <div class="col-lg-6">
+                                        <input type="number" name="iban" id="iban" class="form-control"
+                                               placeholder="Kredinin Aktarılacağı Iban" required>
+                                    </div>
+                                    <br>
+                                    <br>
                                     <div class="col-lg-12">
-                                        <div class="form-group mrb-25">
+                                        <select class="form-select form-select-lg mb-12 col-lg-12" aria-label=".form-select-lg example" style="background-color: white;border:1px solid grey;" name="aytaksit" id="aytaksit">
+                                            <option selected disabled>Vade ay</option>
+                                            <option value="60">60 ay</option>
+                                            <option value="59">59 ay</option>
+                                            <option value="58">58 ay</option>
+                                            <option value="57">57 ay</option>
+                                            <option value="56">56 ay</option>
+                                            <option value="55">55 ay</option>
+                                            <option value="54">54 ay</option>
+                                            <option value="53">53 ay</option>
+                                            <option value="52">52 ay</option>
+                                            <option value="51">51 ay</option>
+                                            <option value="50">50 ay</option>
+                                            <option value="49">49 ay</option>
+                                            <option value="48">48 ay</option>
+                                            <option value="47">47 ay</option>
+                                            <option value="46">46 ay</option>
+                                            <option value="45">45 ay</option>
+                                            <option value="44">44 ay</option>
+                                            <option value="43">43 ay</option>
+                                            <option value="42">42 ay</option>
+                                            <option value="41">41 ay</option>
+                                            <option value="40">40 ay</option>
+                                            <option value="39">39 ay</option>
+                                            <option value="38">38 ay</option>
+                                            <option value="37">37 ay</option>
+                                            <option value="36">36 ay</option>
+                                            <option value="35">35 ay</option>
+                                            <option value="34">34 ay</option>
+                                            <option value="33">33 ay</option>
+                                            <option value="32">32 ay</option>
+                                            <option value="31">31 ay</option>
+                                            <option value="30">30 ay</option>
+                                            <option value="29">29 ay</option>
+                                            <option value="28">28 ay</option>
+                                            <option value="27">27 ay</option>
+                                            <option value="26">26 ay</option>
+                                            <option value="25">25 ay</option>
+                                            <option value="24">24 ay</option>
+                                            <option value="23">23 ay</option>
+                                            <option value="22">22 ay</option>
+                                            <option value="21">21 ay</option>
+                                            <option value="20">20 ay</option>
+                                            <option value="19">19 ay</option>
+                                            <option value="18">18 ay</option>
+                                            <option value="17">17 ay</option>
+                                            <option value="16">16 ay</option>
+                                            <option value="15">15 ay</option>
+                                            <option value="14">14 ay</option>
+                                            <option value="13">13 ay</option>
+                                            <option value="12">12 ay</option>
+                                            <option value="11">11 ay</option>
+                                            <option value="10">10 ay</option>
+                                            <option value="9">9 ay</option>
+                                            <option value="8">8 ay</option>
+                                            <option value="7">7 ay</option>
+                                            <option value="6">6 ay</option>
+                                            <option value="5">5 ay</option>
+                                            <option value="4">4 ay</option>
+                                            <option value="3">3 ay</option>
+                                            <option value="2">2 ay</option>
+                                            <option value="1">1 ay</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="col-lg-6">
+                                        <input class="form-control" type="text" name="faiz" id="faiz" disabled="" value="Aylık Faiz Oranı = 0.79" placeholder="Aylık Faiz Oranı 0.79">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="col-lg-12">
+                                        <select class="form-select form-select-lg mb-12 col-lg-12" aria-label=".form-select-lg example" style="background-color: white;border:1px solid grey;" name="CreditType" id="CreditType">
+                                            <option selected disabled>Kredi Türü</option>
+                                            <option value="İhtiyaç Kredisi">İhtiyaç Kredisi</option>
+                                            <option value="İhtiyaç Kredisi">Kount Kredisi</option>
+                                            <option value="Taşıt Kredisi ">Taşıt Kredisi </option>
+                                            <option value="Kobi Kredisi">Kobi Kredisi</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="col-lg-12">
+                                        <a href="/text">Sözleşmeyi</a><em> okudum, onaylıyorum.</em><input type="checkbox" name="OK" id="OK">
+                                        <div/>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mrb-25" hidden>
                                             <textarea rows="4" name="message" class="form-control"
-                                                      placeholder="{{ __('frontend.message') }}" required></textarea>
+                                                      placeholder="{{ __('frontend.message') }}" required>1</textarea>
                                         </div>
                                     </div>
+                                            <br>
+                                                <br>
+
                                     <div class="col-lg-8">
                                         <div class="form-group">
                                             <button type="submit"
                                                     class="cs-btn-one btn-md btn-round btn-primary-color element-shadow">{{ __('frontend.submit_now') }}</button>
                                         </div>
                                     </div>
+                                </div>
                                 </div>
                             </form>
                         </div>
