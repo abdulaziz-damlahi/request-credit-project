@@ -352,6 +352,77 @@
     @endif
 @endif
 <!-- About Section End -->
+<div class="row" style="padding-top: 200px;padding-bottom: 100px;padding-left: 250px;padding-right: 250px;">
+    <div class="col-4 col-12-mobile">
+        <article class="item">
+            <a href="#" class="image fit">
+                <img src="https://onlineanindakredin.com/images/bireysel-kredi.jpg" alt="">
+            </a>
+            <header>
+                <h3><strong>Bireysel Kredi Hizmeti</strong></h3>
+                <p>150.000 TL kadar 60 ay vade</p>
+            </header>
+        </article>
+    </div>
+    <div class="col-4 col-12-mobile">
+        <article class="item">
+            <a href="#" class="image fit">
+                <img src="https://onlineanindakredin.com/images/kurumsal-kredi.jpg" alt="">
+            </a>
+            <header>
+                <h3><strong>Kurumsal Kredi Hizmeti</strong></h3>
+                <p>500.000 TL kadar 120 ay vade</p>
+            </header>
+        </article>
+    </div>
+    <div class="col-4 col-12-mobile">
+        <article class="item">
+            <a href="#" class="image fit">
+                <img src="https://onlineanindakredin.com/images/konut-kredisi.jpg" alt="">
+            </a>
+            <header>
+                <h3><strong>Konut ve Taşıt Kredisi</strong></h3>
+                <p>Konut ve Taşıt Kredileri için iletişime geçin.</p>
+            </header>
+        </article>
+    </div>
+</div>
+<div class="row" style="padding-left: 200px;padding-right: 200px;">
+   <div class="col-12 col-12-mobile" style="padding-bottom: 100px;text-align:center; "><h2><strong>Hemen Başvuru Yapın Cazip Teklifler Alın!</strong></h2></div>
+    <div class="col-4 col-12-mobile">
+        <article class="item">
+            <a href="#" class="image fit">
+                <img src="https://onlineanindakredin.com/images/15-dakikada-ihtiyac-kredisi.jpg" alt="">
+            </a>
+            <header>
+                <h3><strong>En Uygun Faiz Oranları</strong></h3>
+            </header>
+        </article>
+    </div>
+    <div class="col-4 col-12-mobile">
+        <article class="item">
+            <a href="#" class="image fit">
+                <img src="https://onlineanindakredin.com/images/en-hizli-islem-sureci.jpg" alt="">
+            </a>
+            <header>
+                <h3><strong>En Hızlı İşlem Süreci</strong></h3>
+            </header>
+        </article>
+    </div>
+    <div class="col-4 col-12-mobile">
+        <article class="item">
+            <a href="#" class="image fit">
+                <img src="https://onlineanindakredin.com/images/en-uygun-kredi-kullanim-ucreti.jpg" alt="">
+            </a>
+            <header>
+                <h3><strong>En Uygun Kredi Kullanım Ücreti</strong></h3>
+            </header>
+        </article>
+    </div>
+</div>
+
+
+
 
 <!-- About Section End -->
 @if ($section_arr['counter_section'] == 1)
@@ -389,7 +460,7 @@
 @if ($section_arr['contact_section'] == 1)
     @if (isset($contact_section) || count($contacts) > 0)
         <section id="contact" class="contact-section pdt-110 pdb-95 pdb-lg-90"
-                 data-background="{{ asset('assets/frontend/images/bg/abs-bg1.png') }}" data-scroll-index="6">
+                 data-background="" data-scroll-index="6">
             <div class="container">
                 @if (count($contacts) > 0)
                     <div class="row mrb-40">
@@ -470,7 +541,8 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group mrb-25">
-                                            <textarea id="text" name="address" itemid="address" placeholder="adres" rows="4" cols="37" style="border:1px solid grey;"></textarea>
+                                            <textarea id="text" name="address" itemid="address" placeholder="adres"
+                                                      rows="4" cols="37" style="border:1px solid grey;"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -480,16 +552,24 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <select class="form-select form-select-lg mb-12 col-lg-12" aria-label=".form-select-lg example" style="background-color: white;border:1px solid grey;" name="bank" id="bank"  >
+                                        <select class="form-select form-select-lg mb-12 col-lg-12"
+                                                aria-label=".form-select-lg example"
+                                                style="background-color: white;border:1px solid grey;" name="bank"
+                                                id="bank">
+                                            <option selected disabled>Kullandığınız Banka</option>
                                             <option value="Adabank">Adabank</option>
                                             <option value="Akbank">Akbank</option>
-                                            <option value="Albaraka Türk Katılım Bankası">Albaraka Türk Katılım Bankası</option>
+                                            <option value="Albaraka Türk Katılım Bankası">Albaraka Türk Katılım
+                                                Bankası
+                                            </option>
                                             <option value="Alternatif Bank">Alternatif Bank</option>
                                             <option value="Anadolubank">Anadolubank</option>
                                             <option value="Arap Türk Bankası">Arap Türk Bankası</option>
                                             <option value="Bank Asya">Bank Asya</option>
                                             <option value="Bank Mellat">Bank Mellat</option>
-                                            <option value="Bank of Tokyo-Mitsubishi UFJ Turkey">Bank of Tokyo-Mitsubishi UFJ Turkey</option>
+                                            <option value="Bank of Tokyo-Mitsubishi UFJ Turkey">Bank of Tokyo-Mitsubishi
+                                                UFJ Turkey
+                                            </option>
                                             <option value="Birleşik Fon Bankası">Birleşik Fon Bankası</option>
                                             <option value="Burgan Bank">Burgan Bank</option>
                                             <option value="Citibank">Citibank</option>
@@ -502,17 +582,23 @@
                                             <option value="ING Bank">ING Bank</option>
                                             <option value="Intesa Sanpaolo">Intesa Sanpaolo</option>
                                             <option value="JP Morgan Chase Bank">JP Morgan Chase Bank</option>
-                                            <option value="Kuveyt Türk Katılım Bankası">Kuveyt Türk Katılım Bankası</option>
+                                            <option value="Kuveyt Türk Katılım Bankası">Kuveyt Türk Katılım Bankası
+                                            </option>
                                             <option value="Odeabank">Odeabank</option>
                                             <option value="Rabobank">Rabobank</option>
                                             <option value="Société Générale">Société Générale</option>
                                             <option value="T-Bank">T-Bank</option>
                                             <option value="Tekstilbank">Tekstilbank</option>
-                                            <option value="The Royal Bank of Scotland">The Royal Bank of Scotland</option>
+                                            <option value="The Royal Bank of Scotland">The Royal Bank of Scotland
+                                            </option>
                                             <option value="Turkish Bank">Turkish Bank</option>
                                             <option value="Türk Ekonomi Bankası">Türk Ekonomi Bankası</option>
-                                            <option value="Türkiye Cumhuriyeti Ziraat Bankası">Türkiye Cumhuriyeti Ziraat Bankası</option>
-                                            <option value="Türkiye Finans Katılım Bankası">Türkiye Finans Katılım Bankası</option>
+                                            <option value="Türkiye Cumhuriyeti Ziraat Bankası">Türkiye Cumhuriyeti
+                                                Ziraat Bankası
+                                            </option>
+                                            <option value="Türkiye Finans Katılım Bankası">Türkiye Finans Katılım
+                                                Bankası
+                                            </option>
                                             <option value="Türkiye Garanti Bankası">Türkiye Garanti Bankası</option>
                                             <option value="Türkiye Halk Bankası">Türkiye Halk Bankası</option>
                                             <option value="Türkiye İş Bankası">Türkiye İş Bankası</option>
@@ -536,7 +622,10 @@
                                     <br>
                                     <br>
                                     <div class="col-lg-12">
-                                        <select class="form-select form-select-lg mb-12 col-lg-12" aria-label=".form-select-lg example" style="background-color: white;border:1px solid grey;" name="aytaksit" id="aytaksit">
+                                        <select class="form-select form-select-lg mb-12 col-lg-12"
+                                                aria-label=".form-select-lg example"
+                                                style="background-color: white;border:1px solid grey;" name="aytaksit"
+                                                id="aytaksit">
                                             <option selected disabled>Vade ay</option>
                                             <option value="60">60 ay</option>
                                             <option value="59">59 ay</option>
@@ -603,42 +692,47 @@
                                     <br>
                                     <br>
                                     <div class="col-lg-6">
-                                        <input class="form-control" type="text" name="faiz" id="faiz" disabled="" value="Aylık Faiz Oranı = 0.79" placeholder="Aylık Faiz Oranı 0.79">
+                                        <input class="form-control" type="text" name="faiz" id="faiz" disabled=""
+                                               value="Aylık Faiz Oranı = 0.79" placeholder="Aylık Faiz Oranı 0.79">
                                     </div>
                                     <br>
                                     <br>
                                     <br>
                                     <br>
                                     <div class="col-lg-12">
-                                        <select class="form-select form-select-lg mb-12 col-lg-12" aria-label=".form-select-lg example" style="background-color: white;border:1px solid grey;" name="CreditType" id="CreditType">
-                                            <option selected disabled>Kredi Türü</option>
+                                        <select class="form-select form-select-lg mb-12 col-lg-12"
+                                                aria-label=".form-select-lg example"
+                                                style="background-color: white;border:1px solid grey;" name="CreditType"
+                                                id="CreditType">
+                                            <option disabled selected>Kredi Türü</option>
                                             <option value="İhtiyaç Kredisi">İhtiyaç Kredisi</option>
-                                            <option value="İhtiyaç Kredisi">Kount Kredisi</option>
-                                            <option value="Taşıt Kredisi ">Taşıt Kredisi </option>
+                                            <option value="Kount Kredisi">Kount Kredisi</option>
+                                            <option value="Taşıt Kredisi ">Taşıt Kredisi</option>
                                             <option value="Kobi Kredisi">Kobi Kredisi</option>
                                         </select>
                                     </div>
                                     <br>
                                     <br>
                                     <div class="col-lg-12">
-                                        <a href="/text">Sözleşmeyi</a><em> okudum, onaylıyorum.</em><input type="checkbox" name="OK" id="OK">
+                                        <a href="/text">Sözleşmeyi</a><em> okudum, onaylıyorum.</em><input
+                                            type="checkbox" name="OK" id="OK">
                                         <div/>
-                                    <div class="col-lg-12">
-                                        <div class="form-group mrb-25" hidden>
+                                        <div class="col-lg-12">
+                                            <div class="form-group mrb-25" hidden>
                                             <textarea rows="4" name="message" class="form-control"
                                                       placeholder="{{ __('frontend.message') }}" required>1</textarea>
+                                            </div>
                                         </div>
-                                    </div>
-                                            <br>
-                                                <br>
+                                        <br>
+                                        <br>
 
-                                    <div class="col-lg-8">
-                                        <div class="form-group">
-                                            <button type="submit"
-                                                    class="cs-btn-one btn-md btn-round btn-primary-color element-shadow">{{ __('frontend.submit_now') }}</button>
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                                <button type="submit"
+                                                        class="cs-btn-one btn-md btn-round btn-primary-color element-shadow">{{ __('frontend.submit_now') }}</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                             </form>
                         </div>
@@ -657,58 +751,71 @@
 @if ($section_arr['footer_section'] == 1)
     @if (isset($site_info) || count($socials) > 0 || count($pages) > 0 || count($contacts) > 0)
         <footer class="footer">
-            <div class="footer-main-area" data-background="{{ asset('assets/frontend/images/footer-bg.png') }}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="widget footer-widget">
-                                @if (!empty($general_site_image->site_white_logo_image)) <img
-                                    src="{{ asset('uploads/img/general/'.$general_site_image->site_colored_logo_image) }}"
-                                    class="mrb-20" alt="footer image"> @endif
-                                <address class="mrb-25">
-                                    @if (!empty($site_info->short_desc)) <p
-                                        class="text-light-gray">{{ $site_info->short_desc }}</p> @endif
-                                </address>
-                                <ul class="social-list">
-                                    @foreach ($socials as $social)
-                                        <li><a href="@if (!empty($social->link)) {{ $social->link }} @else # @endif"><i
-                                                    class="{{ $social->social_media }}"></i></a></li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6">
-                            <div class="widget footer-widget">
-                                <h5 class="widget-title text-white mrb-30">Links </h5>
-                                <ul class="footer-widget-list">
-                                    <li><a href="#home" data-scroll-nav="0">{{ __('frontend.home') }}</a></li>
-                                    @if ($section_arr['about_section'] == 1)
-                                        <li><a href="#about" data-scroll-nav="1">{{ __('frontend.about') }}</a>
-                                        </li> @endif
-                                    @if ($section_arr['contact_section'] == 1)
-                                        <li><a href="#contact" data-scroll-nav="6">{{ __('frontend.contact') }}</a>
-                                        </li> @endif
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6">
-                            <div class="widget footer-widget">
-                                <h5 class="widget-title text-white mrb-30">{{ __('frontend.contact_info') }}</h5>
-                                @foreach ($contacts as $contact)
-                                    <div class="mrb-10"><a href="#" class="text-light-gray">@if (!empty($contact->icon))
-                                                <i class="{{ $contact->icon }} mrr-10"></i> @endif {{ $contact->desc }}
-                                        </a></div>
-                                @endforeach
-                            </div>
-                        </div>
+            <div class="container">
+                <div class="row" style="background-color: #dce3e2 ;padding-bottom:70px">
+
+
+                    <div data-ux="GridCell" data-aid="CONTACT_SECTION_INFO_REND"
+                         class="col-md-12 col-xl-12 x-el x-el-div c1-1 c1-2 c1-4y c1-14 c1-5d c1-3z c1-1p c1-5g c1-5h c1-7i c1-5j c1-53 c1-1q c1-62 c1-b c1-c c1-5k c1-5l c1-80 c1-5n c1-d c1-e c1-f c1-g x-d-ux x-d-aid"
+                         style="justify-content: center; background-color: rgb(69, 90, 100);">
+                        <a tccltracking="click" style="justify-content: center;" typography="ButtonAlpha" rel="noopener"
+                           data-ux="Button" href="https://wa.me/+905382832712" target="_blank"
+                           data-aid="CONTACT_INFO_WHATS_APP_REND" data-route="whatsApp"
+                           data-tccl="ux2.contact.whatsapp.click,click"
+                           class="x-el x-el-a c1-7m c1-3j c1-ay c1-az c1-4v c1-4w c1-b0 c1-b1 c1-b2 c1-62 c1-2q c1-22 c1-2s c1-2r c1-1p c1-29 c1-9a c1-53 c1-2u c1-2v c1-2w c1-2x c1-c c1-b3 c1-b4 c1-b5 c1-b6 c1-b7 c1-b c1-37 c1-39 c1-4n c1-b8 c1-ap c1-a1 c1-b9 c1-ba c1-bb c1-ar c1-as c1-bc c1-bd c1-at c1-d c1-be c1-bf c1-e c1-bg c1-bh c1-f c1-g x-d-ux x-d-aid x-d-route x-d-tccl">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="32px" height="32px" data-ux="Icon"
+                                 class="x-el x-el-svg c1-1 c1-2 c1-5s c1-2i c1-21 c1-bi c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux">
+                                <svg viewBox="0 0 496 497">
+                                    <defs>
+                                        <linearGradient id="a" x1="247.32" x2="247.32" y1="446.09" y2="39.9"
+                                                        gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#20b038"></stop>
+                                            <stop offset="1" stop-color="#60d66a"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="b" x1="247.32" x2="247.32" y1="453.37" y2="32.61"
+                                                        gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#f9f9f9"></stop>
+                                            <stop offset="1" stop-color="#fff"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path
+                                        d="M37.88 453.37l29.59-108A208 208 0 0 1 39.63 241.1c0-115 93.6-208.49 208.56-208.49a208.57 208.57 0 0 1 208.57 208.66c-.05 115-93.62 208.49-208.57 208.49h-.08a208.41 208.41 0 0 1-99.67-25.38zm115.68-66.73l6.34 3.75a173.18 173.18 0 0 0 88.23 24.16h.06c95.55 0 173.31-77.75 173.35-173.3A173.34 173.34 0 0 0 248.26 67.83c-95.62 0-173.38 77.73-173.42 173.28a172.94 172.94 0 0 0 26.5 92.23l4.13 6.55L88 403.84z"></path>
+                                    <path fill="url(#a)"
+                                          d="M45.13 446.09l28.57-104.3a200.82 200.82 0 0 1-26.88-100.62c0-111 90.36-201.27 201.34-201.27A201.35 201.35 0 0 1 449.5 241.32c0 111-90.37 201.28-201.33 201.28h-.09a201.31 201.31 0 0 1-96.21-24.49z"></path>
+                                    <path fill="url(#b)"
+                                          d="M37.88 453.37l29.59-108A208 208 0 0 1 39.63 241.1c0-115 93.6-208.49 208.56-208.49a208.57 208.57 0 0 1 208.57 208.66c-.05 115-93.62 208.49-208.57 208.49h-.08a208.41 208.41 0 0 1-99.67-25.38zm115.68-66.73l6.34 3.75a173.18 173.18 0 0 0 88.23 24.16h.06c95.55 0 173.31-77.75 173.35-173.3A173.34 173.34 0 0 0 248.26 67.83c-95.62 0-173.38 77.73-173.42 173.28a172.94 172.94 0 0 0 26.5 92.23l4.13 6.55L88 403.84z"></path>
+                                    <path fill="#fff"
+                                          d="M196.07 153.94c-3.91-8.68-8-8.85-11.73-9-3-.14-6.51-.13-10-.13a19.15 19.15 0 0 0-13.89 6.52c-4.78 5.22-18.24 17.82-18.24 43.46s18.67 50.42 21.28 53.9 36.05 57.77 89 78.66c44 17.36 53 13.91 62.53 13s30.83-12.61 35.18-24.78 4.34-22.59 3-24.77-4.78-3.48-10-6.08-30.83-15.22-35.61-16.95-8.25-2.61-11.73 2.61-13.45 16.94-16.5 20.42-6.08 3.92-11.29 1.31-22-8.11-41.9-25.86c-15.5-13.82-26-30.87-29-36.09s-.32-8 2.29-10.63c2.34-2.34 5.21-6.09 7.82-9.13s3.47-5.21 5.21-8.69.87-6.52-.44-9.13-11.35-28.34-15.98-38.64z"></path>
+                                </svg>
+                            </svg>
+                            <span
+                                style="padding-left:400px ;jtext-transform:none;letter-spacing:normal;font-weight:900;font-size:20px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;max-width:88%">Bize WhatsApp Üzerinden Ulaşın</span></a>
+                    </div>
+                    <div class="col-md-12 col-xl-12" style="  text-align: center;"> Online Kredin Yatırım Menkul
+                        Değerler A.Ş
+                    </div>
+                    <div class="col-md-12 col-xl-12" style="  text-align: center;">Ankara, Çankaya</div>
+                    <div class="col-md-12 col-xl-12" style="  text-align: center;">info@onlineanindakredin.com</div>
+                    <div class="col-md-12 col-xl-12" style="  text-align: center;">WhatsApp Destek Hattımız
+                        +905382832712
+                    </div>
+                    <div class="col-md-12 col-xl-12" style="  text-align: center;" class="copyright">
+                        <li style="  text-align: center;">
+                            <strong>&copy; Online Anindakredin Yatırım Menkul Değerler A.Ş</strong>. Tüm Hakları
+                            Saklıdır ®
+                        </li>
                     </div>
                 </div>
+            </div>
+            </div>
+
             </div>
             <div class="footer-bottom-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="text-center">
+
                                 <span
                                     class="text-light-gray">@if (!empty($site_info->copyright)) {{ $site_info->copyright }} @endif</span>
                             </div>
@@ -716,9 +823,10 @@
                     </div>
                 </div>
             </div>
+
         </footer>
     @else
-        <footer class="footer">
+        <footer class="footer" style="background-color: #dce3e2!important;">
             <div class="footer-main-area" data-background="{{ asset('assets/frontend/images/footer-bg.png') }}">
                 <div class="container">
                     <div class="row">

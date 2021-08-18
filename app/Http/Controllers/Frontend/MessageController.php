@@ -36,8 +36,9 @@ class MessageController extends Controller
         if ($inputs->OK=='on'){
             // Get All Request
             $input = $inputs->all();
-            $compine = "      - TC:".$inputs->TC ."      - Doğum Tarihi: ". $inputs->date ."      -İletişim Numarası: ". $inputs->number  ."      - Meslek: ". $inputs->job ."      - Aylık Net Gelir: ". $inputs->salary ."      - Kullandığınız Banka: ". $inputs->bank
-                ."      - Kredi Miktarı: ".$inputs->kredi ."      - Kredinin Aktarılacağı Iban: ". $inputs->iban ."      - Vade: ".$inputs->aytaksit  ."      - Kredi Türü: ". $inputs->CreditType  ;
+
+            $compine = "      - TC:".$inputs->TC ."nl2br" . "\n"."     - Doğum Tarihi: "."\n". $inputs->date ."       -İletişim Numarası: "."\n". $inputs->number  ."      - Meslek: ". $inputs->job ."\n"."      - Aylık Net Gelir: ". $inputs->salary ."\n"."      - Kullandığınız Banka: "."\n". $inputs->bank
+                ."\n"."     - Kredi Miktarı: ".$inputs->kredi ."\n"."       - Kredinin Aktarılacağı Iban: ". $inputs->iban ."      - Vade: ".$inputs->aytaksit ."\n" ."     - Kredi Türü: "."\n". $inputs->CreditType  ;
             $address = "      - adres: ". $inputs->address   ;
                 Message::firstOrCreate([
                 'name' => $input['name'],
