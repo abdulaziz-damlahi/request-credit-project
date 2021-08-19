@@ -41,16 +41,6 @@
                             @php $i = 1; @endphp
                             @foreach ($messages as $message)
                                 <tr>
-                                    'TC' ,
-                                    'date' ,
-                                    'number' ,
-                                    'job' ,
-                                    'salary' ,
-                                    'kredi' ,
-                                    'iban' ,
-                                    'aytaksit' ,
-                                    'CreditType' ,
-                                    'bank' ,
                                     <td>{{ $i++ }}</td>
                                     <td>{{ $message->name }}</td>
                                     <td>{{ $message->email }}</td>
