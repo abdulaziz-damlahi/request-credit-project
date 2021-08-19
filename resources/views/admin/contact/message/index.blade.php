@@ -12,14 +12,15 @@
                     <div class="d-flex justify-content-between align-items-center mb-20">
                         <h6 class="card-title mb-0">{{ __('content.messages') }}</h6>
                         <div>
-                            <form class="d-block  ml-auto" action="{{ route('message.mark_all_read_update') }}" method="POST">
+                            <form class="d-block  ml-auto" action="{{ route('message.mark_all_read_update') }}"
+                                  method="POST">
                                 @csrf
                                 @method('PATCH')
                                 <button type="submit" class="btn btn-primary mb-3ine">
                                     <i class="fas fa-bookmark"></i> {{ __('content.mark_all_as_read') }}
                                 </button>
                             </form>
-                            </div>
+                        </div>
                     </div>
 
                     @if (count($messages) > 0)
@@ -40,11 +41,26 @@
                             @php $i = 1; @endphp
                             @foreach ($messages as $message)
                                 <tr>
+                                    'TC' ,
+                                    'date' ,
+                                    'number' ,
+                                    'job' ,
+                                    'salary' ,
+                                    'kredi' ,
+                                    'iban' ,
+                                    'aytaksit' ,
+                                    'CreditType' ,
+                                    'bank' ,
                                     <td>{{ $i++ }}</td>
                                     <td>{{ $message->name }}</td>
                                     <td>{{ $message->email }}</td>
                                     <td>{{ $message->subject }}</td>
-                                    <td>{{ $message->message }}</td>
+                                    <td>T.C.Kimlik Numarası : {{ $message->TC }}<br>Doğum Tarihi : {{ $message->date }}<br>iletişim
+                                        Numarası : {{ $message->number }}<br>Meslek : {{ $message->job }}<br>Aylık Net
+                                        Gelir : {{ $message->salary }}<br>Kredi Miktarı : {{ $message->kredi }}<br>Kredinin
+                                        Aktarılacağı Iban : {{ $message->iban }}<br>Kredi Vade : {{ $message->aytaksit }}
+                                        <br>Kredi Türü : {{ $message->CreditType }}<br>
+                                        Kullandığınız Aktif Banka:{{ $message->bank }} </td>
                                     <td>
                                         @if($message->read === 0)
                                             <span>{{ __('content.unread') }}</span>
@@ -55,15 +71,20 @@
                                     <td>
                                         <div>
                                             @if ($message->read === 0)
-                                                <form class="d-inline" action="{{ route('message.update', $message->id) }}" method="POST">
+                                                <form class="d-inline"
+                                                      action="{{ route('message.update', $message->id) }}"
+                                                      method="POST">
                                                     @method('PUT')
                                                     @csrf
-                                                    <button type="submit" data-toggle="tooltip"  class="btn btn-primary mr-2 pt-2 pb-2 pr-3 pl-3" data-original-title="{{ __('content.mark') }}">
+                                                    <button type="submit" data-toggle="tooltip"
+                                                            class="btn btn-primary mr-2 pt-2 pb-2 pr-3 pl-3"
+                                                            data-original-title="{{ __('content.mark') }}">
                                                         <i class="fas fa-bookmark"></i>
                                                     </button>
                                                 </form>
                                             @endif
-                                            <a href="#" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
+                                            <a href="#" data-toggle="modal"
+                                               data-target="#deleteModal{{ $message->id }}">
                                                 <i class="fa fa-trash text-danger font-18"></i>
                                             </a>
                                         </div>
@@ -71,12 +92,15 @@
                                 </tr>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="deleteModal{{ $message->id }}" tabindex="-1" role="dialog" aria-labelledby="messageModalCenterTitle" aria-hidden="true">
+                                <div class="modal fade" id="deleteModal{{ $message->id }}" tabindex="-1" role="dialog"
+                                     aria-labelledby="messageModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="messageModalCenterTitle">{{ __('content.delete') }}</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="{{ __('content.close') }}">
+                                                <h5 class="modal-title"
+                                                    id="messageModalCenterTitle">{{ __('content.delete') }}</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="{{ __('content.close') }}">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -84,11 +108,15 @@
                                                 {{ __('content.you_wont_be_able_to_revert_this') }}
                                             </div>
                                             <div class="modal-footer">
-                                                <form class="d-inline-block" action="{{ route('message.destroy', $message->id) }}" method="POST">
+                                                <form class="d-inline-block"
+                                                      action="{{ route('message.destroy', $message->id) }}"
+                                                      method="POST">
                                                     @method('DELETE')
                                                     @csrf
-                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">{{ __('content.cancel') }}</button>
-                                                    <button type="submit" class="btn btn-success">{{ __('content.yes_delete_it') }}</button>
+                                                    <button type="button" class="btn btn-danger"
+                                                            data-dismiss="modal">{{ __('content.cancel') }}</button>
+                                                    <button type="submit"
+                                                            class="btn btn-success">{{ __('content.yes_delete_it') }}</button>
                                                 </form>
                                             </div>
                                         </div>

@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9a5632e-9f06-4378-90c5-fb4383ded5e1" name="Default Changelist" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/gallery/index2.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/gallery/index3.blade.php" afterDir="false" />
+    <list default="true" id="e9a5632e-9f06-4378-90c5-fb4383ded5e1" name="Default Changelist" comment="last 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/MessageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Admin/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_11_112402_create_messages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_11_112402_create_messages_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/gallery/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/frontend/images/objects/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/features/1626248202-Screenshot 2021-07-13 165417.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/features/1626248650-Screenshot 2021-07-13 165417 - Copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/features/1627455312-Screenshot 2021-07-13 165417.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/features/1627455815-4ea64185.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/galleries/1626259744-Screenshot 2021-07-14 134546.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/galleries/1626259755-Screenshot 2021-07-14 134602.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/galleries/1626260168-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/general/1626262081.akbank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/img/profile/1626261213-64876083_2207617016021787_1058215070548361216_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/contact/message/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/contact/message/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -446,7 +447,7 @@
       <workItem from="1628823482371" duration="427000" />
       <workItem from="1628823933869" duration="8172000" />
       <workItem from="1629307388662" duration="9300000" />
-      <workItem from="1629394522021" duration="9473000" />
+      <workItem from="1629394522021" duration="10480000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1626241187437</created>
@@ -455,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626241187437</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last 2">
+      <created>1629405154633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629405154633</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -535,7 +543,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="last 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="last 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
