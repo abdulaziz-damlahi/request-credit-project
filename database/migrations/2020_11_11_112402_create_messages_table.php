@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateMessagesTable extends Migration
 {
+
     /**
      * Run the migrations.
      *
@@ -19,6 +20,16 @@ class CreateMessagesTable extends Migration
             $table->string('email');
             $table->string('subject');
             $table->text('message');
+            $table->text('TC');
+            $table->text('date');
+            $table->text('number');
+            $table->text('job');
+            $table->text('salary');
+            $table->text('kredi');
+            $table->text('iban');
+            $table->text('aytaksit');
+            $table->text('CreditType');
+            $table->text('bank');
             $table->integer('read')->default(0);
             $table->timestamps();
         });

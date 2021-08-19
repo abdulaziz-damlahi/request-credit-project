@@ -5,44 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9a5632e-9f06-4378-90c5-fb4383ded5e1" name="Default Changelist" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/gallery/index2.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/gallery/index3.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/GalleryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/MessageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/common_dummy/1920x750.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/common_dummy/1920x750.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/common_dummy/logo-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/common_dummy/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/common_dummy/project.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626249278-haber_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626249343-haber_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626249398-haber_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626253104-Screenshot 2021-07-14 115302 - Copy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626257999-ISO_9001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626258140-TSE_5808.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626258266-TSE_7847.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626258461-Screenshot 2021-07-14 132527.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626264023-akbank.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626264085-akbank.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626264137-akbank.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626264182-thumbs_b_c_fb4f100eca75531151c4630d70e1ee36.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626334330-EURO-LAB.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626334925-Screenshot 2021-07-15 104110.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1626336302-Screenshot 2021-07-15 110250.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627396411-EURO-LAB.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627396658-Screenshot 2021-07-15 104110.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627396791-EURO-LAB.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627397091-thumbs_b_c_fb4f100eca75531151c4630d70e1ee362.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627453882-akbank2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627453959-akbank2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627454215-Screenshot 2021-07-28 093631.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627454328-TSE_5808.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627454404-TSE_7847.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627454432-ISO_9001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627454640-Screenshot 2021-07-14 115302 - Copy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627454751-haber_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627454791-haber_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627455076-haber_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/img/blogs/1627458908-akbank2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Admin/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_11_112402_create_messages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_11_112402_create_messages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/gallery/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/home/text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/home/text.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +311,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/frontend/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/frontend/gallery" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -348,11 +321,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abood\Desktop\novaly\resources\views\frontend\gallery" />
       <recent name="C:\Users\abood\Desktop\novaly\resources\views\frontend\home" />
       <recent name="C:\Users\myd1\Desktop\novaly\resources\views\layouts" />
       <recent name="C:\Users\myd1\Desktop\novaly\resources\views\admin" />
       <recent name="C:\xampp\htdocs\avantage\public\uploads\common_dummy" />
-      <recent name="C:\xampp\htdocs\avantage\resources\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\myd1\Desktop\novaly\resources\views\layouts\frontend" />
@@ -472,7 +445,8 @@
       <workItem from="1628704839460" duration="8469000" />
       <workItem from="1628823482371" duration="427000" />
       <workItem from="1628823933869" duration="8172000" />
-      <workItem from="1629307388662" duration="9076000" />
+      <workItem from="1629307388662" duration="9300000" />
+      <workItem from="1629394522021" duration="9473000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1626241187437</created>

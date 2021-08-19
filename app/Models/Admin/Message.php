@@ -20,5 +20,17 @@ class Message extends Model
         'subject',
         'message',
         'read',
+        'TC'  ,
+        'date'  ,
+        'number'  ,
+        'job'  ,
+        'salary'  ,
+        'kredi'  ,
+        'iban'  ,
+        'aytaksit'  ,
+        'CreditType'  ,
+        'address'  ,
+        'bank'  ,
     ];
 }
+

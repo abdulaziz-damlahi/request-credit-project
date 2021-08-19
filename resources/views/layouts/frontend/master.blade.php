@@ -118,7 +118,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="{{ url('/') }}">
+                        <a class="navbar-brand logo f-left mrt-10 mrt-md-0" href="{{ url('/') }}" >
                             @if (!empty($general_site_image->site_white_logo_image))
                                 <img id="logo-image" class="img-center" src="{{ asset('uploads/img/general/'.$general_site_image->site_white_logo_image) }}" alt="logo image">
                             @else
@@ -132,9 +132,7 @@
                                 <span class="bar2"></span>
                                 <span class="bar3"></span>
                             </div>
-                            <div class="show-searchbox">
-                                <a href="#"><i class="webex-icon-Search"></i></a>
-                            </div>
+
                             <div class="toggle-searchbox">
                                 <form id="searchform-all" action="{{ route('blog-page.search') }}" method="POST">
                                     @csrf
@@ -179,27 +177,14 @@
                         </div>
                         <div class="main-menu f-right">
                             <nav id="mobile-menu-right">
-                                <ul class="one-pagenav">
-                                    <li><a href="{{ url('/') }}"style="padding-left: 40px"><i class="fa fa-home" ></i>  {{ __('frontend.home') }}</a></li>
-                                    @if ($section_arr['about_section'] == 1) <li><a href="{{ url('/'.'#about') }}"style="padding-left: 40px"><i class="fa fa-info-circle"></i>  {{ __('frontend.about') }}</a></li> @endif
-                                    @if ($section_arr['blog_section'] == 1) <li><a href="{{ url('/'.'#news') }}"style="padding-left: 40px"><i class="fas fa-newspaper"></i>  {{ __('frontend.news') }}</a></li> @endif
-                                    @if ($section_arr['contact_section'] == 1) <li><a href="{{ url('/'.'#contact') }}"style="padding-left: 40px"><i class="fa fa-at" ></i>  {{ __('frontend.contact') }}</a></li> @endif
-                                    @if ($section_arr['page_menu'] == 1)
-                                        <li class="has-sub right-view">
-                                            <a href="#"style="padding-left: 40px"><i class="fa fa-plus" ></i>  {{ __('frontend.pages') }}</a>
-                                            <ul class="sub-menu">
-                                                @if ($section_arr['team_section'] == 1) <li><a href="http://127.0.0.1:8000/blog/category/documents">{{ __('frontend.teams') }}</a></li> @endif
-                                                @if ($section_arr['gallery_section'] == 1) <li><a href="{{ url('gallery') }}">{{ __('frontend.gallery') }}</a></li> @endif
-                                                <li><a href="http://127.0.0.1:8000/blog/category/bank-accounts">bank accounts</a></li>
-                                                @foreach ($pages as $page)
-                                                    @if ($page->display_footer_menu != 1)
-                                                        <li><a href="{{ url('page/'.$page->page_slug) }}">{{ $page->page_title }}</a></li>
-                                                    @endif
-                                                @endforeach
-                                                @php unset($page); @endphp
-                                            </ul>
-                                        </li>
-                                    @endif
+                                <ul class="one-pagenav" style="padding-right: 150px">
+                                    <li ><a href="{{ url('/') }}"><i class="fa fa-home" ></i>  {{ __('frontend.home') }}</a></li>
+                                    @if ($section_arr['about_section'] == 1) <li><a href="{{ url('/'.'#about') }}"style=""><i class="fa fa-info-circle"></i>  {{ __('frontend.about') }}</a></li> @endif
+                                    @if ($section_arr['contact_section'] == 1) <li><a href="{{ url('/'.'#contact') }}"style=""><i class="fa fa-at" ></i>  {{ __('frontend.contact') }}</a></li> @endif
+                                    <li><a href="{{ url('Krediyi-Nasıl-Alırım') }}">Krediyi Nasıl Alırım?</a>
+                                    <li><a href="{{ url('esaslar') }}">esaslar</a>
+                                    <li><a href="{{ url('SSS') }}">SSS</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -220,48 +205,6 @@
 @if ($section_arr['footer_section'] == 1)
     @if (isset($site_info) || count($socials) > 0 || count($pages) > 0 || count($contacts) > 0)
         <footer class="footer">
-            <div class="footer-main-area" data-background="{{ asset('assets/frontend/images/footer-bg.png') }}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="widget footer-widget">
-                                @if (!empty($general_site_image->site_white_logo_image)) <img src="{{ asset('uploads/img/general/'.$general_site_image->site_colored_logo_image) }}" class="mrb-20" alt="footer image"> @endif
-                                <address class="mrb-25">
-                                    @if (!empty($site_info->short_desc)) <p class="text-light-gray">{{ $site_info->short_desc }}</p> @endif
-                                </address>
-                                <ul class="social-list">
-                                    @foreach ($socials as $social)
-                                        <li><a href="@if (!empty($social->link)) {{ $social->link }} @else # @endif"><i class="{{ $social->social_media }}"></i></a></li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6">
-                            <div class="widget footer-widget">
-                                <h5 class="widget-title text-white mrb-30">Useful Links</h5>
-                                <ul class="footer-widget-list">
-                                    <li><a href="{{ url('/') }}">{{ __('frontend.home') }}</a></li>
-                                    @if ($section_arr['about_section'] == 1) <li><a href="{{ url('/'.'#about') }}">{{ __('frontend.about') }}</a></li> @endif
-                                    @if ($section_arr['service_section'] == 1) <li><a href="{{ url('/'.'#service') }}">{{ __('frontend.services') }}</a></li> @endif
-                                    @if ($section_arr['team_section'] == 1) <li><a href="{{ url('/'.'#team') }}">{{ __('frontend.teams') }}</a></li> @endif
-                                    @if ($section_arr['project_section'] == 1) <li><a href="{{ url('/'.'#case-study') }}">{{ __('frontend.projects') }}</a></li> @endif
-                                    @if ($section_arr['blog_section'] == 1) <li><a href="{{ url('/'.'#news') }}">{{ __('frontend.news') }}</a></li> @endif
-                                    @if ($section_arr['contact_section'] == 1) <li><a href="{{ url('/'.'#contact') }}">{{ __('frontend.contact') }}</a></li> @endif
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-lg-6 col-md-6">
-                            <div class="widget footer-widget">
-                                <h5 class="widget-title text-white mrb-30">{{ __('frontend.contact_info') }}</h5>
-                                @foreach ($contacts as $contact)
-                                    <div class="mrb-10"><a href="#" class="text-light-gray">@if (!empty($contact->icon)) <i class="{{ $contact->icon }} mrr-10"></i> @endif {{ $contact->desc }}</a></div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="footer-bottom-area">
                 <div class="container">
                     <div class="row">

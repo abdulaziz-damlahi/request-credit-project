@@ -203,18 +203,22 @@
                         </div>
                         <div class="main-menu f-right">
                             <nav id="mobile-menu-right">
-                                <ul class="one-pagenav">
-                                    <li><a href="#home" data-scroll-nav="0" style="padding-left: 40px"><i
+                                <ul class="one-pagenav" style="padding-right: 150px">
+                                    <li><a href="#home" data-scroll-nav="0" ><i
                                                 class="fa fa-home"></i> {{ __('frontend.home') }}</a></li>
                                     @if ($section_arr['about_section'] == 1)
-                                        <li><a href="#about" data-scroll-nav="1" style="padding-left: 40px"><i
+                                        <li><a href="#about" data-scroll-nav="1" ><i
                                                     class="fa fa-info-circle"></i> {{ __('frontend.about') }}</a>
                                         </li> @endif
                                     @if ($section_arr['contact_section'] == 1)
-                                        <li><a href="#contact" data-scroll-nav="6" style="padding-left: 40px"><i
+                                        <li><a href="#contact" data-scroll-nav="6" ><i
                                                     class="fa fa-at"></i> {{ __('frontend.contact') }}</a>
                                         </li> @endif
+                                    <li><a href="{{ url('Krediyi-Nasıl-Alırım') }}">Krediyi Nasıl Alırım?</a>
+                                    <li><a href="{{ url('esaslar') }}">esaslar</a>
+                                    <li><a href="{{ url('SSS') }}">SSS</a>
 
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -242,15 +246,8 @@
                                     <h1>{{ $slider->title }}</h1>
                                     <p>{{ $slider->desc }}</p>
                                     @if (!empty($slider->btn_name))
-                                        <div class="btn-box">
-                                            <a href="@if (!empty($slider->btn_link)) {{ $slider->btn_link }} @else # @endif"
-                                               class="cs-btn-one btn-gradient-color">{{ $slider->btn_name }}</a>
-                                        </div>
                                     @elseif (empty($slider->btn_name) && empty($slider->btn_link) && $section_arr['contact_section'] == 1)
-                                        <div class="btn-box">
-                                            <a href="#contact" data-scroll-nav="6"
-                                               class="cs-btn-one btn-gradient-color">{{ __('frontend.contact_us') }}</a>
-                                        </div>
+
                                     @endif
                                 </div>
                             </div>
@@ -320,8 +317,6 @@
                         <h2 class="title-under-line mrb-70">{{ $about->title }}</h2>
                         <p>@php echo html_entity_decode($about->desc); @endphp</p>
                         @if (!empty($about->btn_name))
-                            <a href="@if (!empty($about->btn_link)) {{ $about->btn_link }} @else # @endif"
-                               class="cs-btn-one btn-gradient-color btn-lg">{{ $about->btn_name }}</a>
                         @endif
                     </div>
                 </div>
@@ -542,7 +537,7 @@
                                     <div class="col-lg-6">
                                         <div class="form-group mrb-25">
                                             <textarea id="text" name="address" itemid="address" placeholder="adres"
-                                                      rows="4" cols="37" style="border:1px solid grey;"></textarea>
+                                                      rows="4" cols="37" style="border:1px solid grey;" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -555,8 +550,8 @@
                                         <select class="form-select form-select-lg mb-12 col-lg-12"
                                                 aria-label=".form-select-lg example"
                                                 style="background-color: white;border:1px solid grey;" name="bank"
-                                                id="bank">
-                                            <option selected disabled>Kullandığınız Banka</option>
+                                                id="bank" required>
+                                            <option value="" selected disabled>Kullandığınız Banka</option>
                                             <option value="Adabank">Adabank</option>
                                             <option value="Akbank">Akbank</option>
                                             <option value="Albaraka Türk Katılım Bankası">Albaraka Türk Katılım
@@ -622,11 +617,8 @@
                                     <br>
                                     <br>
                                     <div class="col-lg-12">
-                                        <select class="form-select form-select-lg mb-12 col-lg-12"
-                                                aria-label=".form-select-lg example"
-                                                style="background-color: white;border:1px solid grey;" name="aytaksit"
-                                                id="aytaksit">
-                                            <option selected disabled>Vade ay</option>
+                                        <select class="form-select form-select-lg mb-12 col-lg-12" aria-label=".form-select-lg example" style="background-color: white;border:1px solid grey;" name="aytaksit" id="aytaksit" required>
+                                            <option value="" selected disabled>Vade ay</option>
                                             <option value="60">60 ay</option>
                                             <option value="59">59 ay</option>
                                             <option value="58">58 ay</option>
@@ -703,8 +695,8 @@
                                         <select class="form-select form-select-lg mb-12 col-lg-12"
                                                 aria-label=".form-select-lg example"
                                                 style="background-color: white;border:1px solid grey;" name="CreditType"
-                                                id="CreditType">
-                                            <option disabled selected>Kredi Türü</option>
+                                                id="CreditType" required>
+                                            <option value="" disabled selected>Kredi Türü</option>
                                             <option value="İhtiyaç Kredisi">İhtiyaç Kredisi</option>
                                             <option value="Kount Kredisi">Kount Kredisi</option>
                                             <option value="Taşıt Kredisi ">Taşıt Kredisi</option>
@@ -715,7 +707,7 @@
                                     <br>
                                     <div class="col-lg-12">
                                         <a href="/text">Sözleşmeyi</a><em> okudum, onaylıyorum.</em><input
-                                            type="checkbox" name="OK" id="OK">
+                                            type="checkbox" name="OK" id="OK" required>
                                         <div/>
                                         <div class="col-lg-12">
                                             <div class="form-group mrb-25" hidden>

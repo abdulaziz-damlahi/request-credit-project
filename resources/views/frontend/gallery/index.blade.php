@@ -10,54 +10,67 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <div class="page-title-content">
-                        <h3 class="title text-white">{{ __('frontend.gallery') }}</h3>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a  href="{{ url('/') }}">{{ __('frontend.home') }}</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">{{ __('frontend.gallery') }}</li>
-                            </ol>
-                        </nav>
+                        <h3 class="title text-white">Krediyi Nasıl Alırım?</h3>
+
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- Page Title End -->
-
-    <!-- Portfolio Grid Animate Start -->
-    @if (count($galleries) > 0)
-        <section class="service-section pdt-110 pdt-lg-105 pdb-80">
-            <div class="section-content">
-                <div class="container">
-                    <div class="row" id="portfolio-dark-grid-animate">
-                        @foreach ($galleries as $gallery)
-                            <div class="col-md-6 col-lg-4 portfolio-item wow fadeInUp" data-wow-delay="0.1s" data-tilt data-tilt-perspective="2000">
-                                <div class="portfolio-item-inner">
-                                    <div class="portfolio-item-img">
-                                        <a data-fancybox="dark-grid-animate" href="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}">
-                                            <img src="{{ asset('uploads/img/galleries/'.$gallery->gallery_image) }}" alt="gallery image" class="img-fluid">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
+    <div class="container" style="padding-top: 100px;padding-bottom: 100px">
+        <div class="sayfa_ici">
+            <p>İlk olarak başvuru kısımından kredi başvurunuzu sağlamalısınız.</p>
+            <div class="row">
+                <div class="col-6 col-12-mobile margin-auto">
+                    <div class="form-group">
+                        <h2>Başvuru sonucunuz mail adresinize iletilir.</h2>
+                        <p>Başvurunuza istinaden krediniz onaylanır ise krediyi ödeyememe durumunuza karşılık yapılan güvence sigortası bedelinizi karşılamanız gerekir. </p>
                     </div>
                 </div>
-            </div>
-        </section>
-    @else
-        <section class="service-section pdt-110 pdt-lg-105 pdb-80">
-            <div class="section-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 mx-auto text-center">
-                            <span>{{ __('frontend.updating') }}</span>
+                <div class="col-6 col-12-mobile margin-auto">
+                    <div class="form-group">
+                        <div class="text-center">
+                            <img src="https://onlineanindakredin.com/images/basvuru-sonucu-email.jpg" class="img-fluid">
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    @endif
-    <!-- Portfolio Grid Animate End -->
 
+            <div class="row">
+                <div class="col-6 col-12-mobile margin-auto">
+                    <div class="form-group">
+                        <h2>Aynı gün kredinizi kullanabilirsiniz.</h2>
+                        <p>Sigorta departmanı hesabımıza bedelinizi yatırmanız halinde size en yakın PTT şubesine sözleşmeniz faks olarak iletilir. </p>
+                    </div>
+                </div>
+                <div class="col-6 col-12-mobile margin-auto">
+                    <div class="form-group">
+                        <div class="text-center">
+                            <img src="https://onlineanindakredin.com/images/ayni-gun-kredi.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-12-mobile margin-auto">
+                    <div class="form-group">
+                        <h2>Sigorta bedelinizi tamamladıktan sonra süreç sözleşme kısmıdır.</h2>
+                        <p>Sözleşmenizi teslim alıp, imzaladıktan sonra açık adresimize kargoladığınızı bildirmeniz ve firmamız personelleri tarafından teyit edildiği taktirde tarafımıza aktardığınız banka hesap numaranıza kredi miktarınız havale/eft aracılığı ile iletilir.</p>
+                        <p>Sigorta bedellerini finans danışmanlarımızdan talep edebilir veya web sitemizde bulunan esaslar kısımından inceleyebilirsiniz.</p>
+                        <p>Firmamız bankalardan bağımsız olup kendi bünyesinde sözleşme usulü kredi hizmeti vermektedir. Tüm işlemleriniz resmi web sitesi güvencesi altındadır. Ticaret odası kaydımız faal ve aktiftir.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-12-mobile margin-auto">
+                    <div class="form-group">
+                        <div class="text-center">
+                            <img src="https://onlineanindakredin.com/images/sozlesme.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

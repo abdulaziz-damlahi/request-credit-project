@@ -72,8 +72,13 @@ Route::middleware(['XSS'])->group(function () {
 Route::get('page/{page_slug}', [App\Http\Controllers\Frontend\PageController::class, 'show'])
     ->name('any-page.show')->middleware('XSS');
 
-Route::get('gallery', [App\Http\Controllers\Frontend\GalleryController::class, 'index'])
-    ->name('gallery-page.index')->middleware('XSS');
+Route::get('Krediyi-Nasıl-Alırım', [App\Http\Controllers\Frontend\GalleryController::class, 'index'])
+    ->name('Krediyi-Nasıl-Alırım')->middleware('XSS');
+
+Route::get('SSS', [App\Http\Controllers\Frontend\GalleryController::class, 'index2'])
+    ->name('SSS')->middleware('XSS');
+Route::get('esaslar', [App\Http\Controllers\Frontend\GalleryController::class, 'index3'])
+    ->name('esaslar')->middleware('XSS');
 
 Route::post('comment', [App\Http\Controllers\Frontend\CommentController::class, 'store'])
     ->name('comment.store')->middleware('XSS');
