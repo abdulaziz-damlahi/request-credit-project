@@ -743,7 +743,7 @@
 @if ($section_arr['footer_section'] == 1)
     @if (isset($site_info) || count($socials) > 0 || count($pages) > 0 || count($contacts) > 0)
         <footer class="footer">
-            <div class="container">
+
                 <div class="row" style="background-color: #dce3e2 ;padding-bottom:70px">
 
 
@@ -755,8 +755,10 @@
                            data-aid="CONTACT_INFO_WHATS_APP_REND" data-route="whatsApp"
                            data-tccl="ux2.contact.whatsapp.click,click"
                            class="x-el x-el-a c1-7m c1-3j c1-ay c1-az c1-4v c1-4w c1-b0 c1-b1 c1-b2 c1-62 c1-2q c1-22 c1-2s c1-2r c1-1p c1-29 c1-9a c1-53 c1-2u c1-2v c1-2w c1-2x c1-c c1-b3 c1-b4 c1-b5 c1-b6 c1-b7 c1-b c1-37 c1-39 c1-4n c1-b8 c1-ap c1-a1 c1-b9 c1-ba c1-bb c1-ar c1-as c1-bc c1-bd c1-at c1-d c1-be c1-bf c1-e c1-bg c1-bh c1-f c1-g x-d-ux x-d-aid x-d-route x-d-tccl">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="32px" height="32px" data-ux="Icon"
-                                 class="x-el x-el-svg c1-1 c1-2 c1-5s c1-2i c1-21 c1-bi c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux">
+
+                            <span
+                                style="padding-left:700px ;jtext-transform:none;letter-spacing:normal;font-weight:900;font-size:20px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;max-width:88%">        <svg viewBox="0 0 24 24" fill="currentColor" width="32px" height="32px" data-ux="Icon"
+                                                                                                                                                                                                                          class="x-el x-el-svg c1-1 c1-2 c1-5s c1-2i c1-21 c1-bi c1-b c1-c c1-d c1-e c1-f c1-g x-d-ux">
                                 <svg viewBox="0 0 496 497">
                                     <defs>
                                         <linearGradient id="a" x1="247.32" x2="247.32" y1="446.09" y2="39.9"
@@ -779,9 +781,7 @@
                                     <path fill="#fff"
                                           d="M196.07 153.94c-3.91-8.68-8-8.85-11.73-9-3-.14-6.51-.13-10-.13a19.15 19.15 0 0 0-13.89 6.52c-4.78 5.22-18.24 17.82-18.24 43.46s18.67 50.42 21.28 53.9 36.05 57.77 89 78.66c44 17.36 53 13.91 62.53 13s30.83-12.61 35.18-24.78 4.34-22.59 3-24.77-4.78-3.48-10-6.08-30.83-15.22-35.61-16.95-8.25-2.61-11.73 2.61-13.45 16.94-16.5 20.42-6.08 3.92-11.29 1.31-22-8.11-41.9-25.86c-15.5-13.82-26-30.87-29-36.09s-.32-8 2.29-10.63c2.34-2.34 5.21-6.09 7.82-9.13s3.47-5.21 5.21-8.69.87-6.52-.44-9.13-11.35-28.34-15.98-38.64z"></path>
                                 </svg>
-                            </svg>
-                            <span
-                                style="padding-left:400px ;jtext-transform:none;letter-spacing:normal;font-weight:900;font-size:20px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;max-width:88%">Bize WhatsApp Üzerinden Ulaşın</span></a>
+                            </svg>Bize WhatsApp Üzerinden Ulaşın</span></a>
                     </div>
                     <div class="col-md-12 col-xl-12" style="  text-align: center;"> Online Kredin Yatırım Menkul
                         Değerler A.Ş
@@ -798,7 +798,7 @@
                         </li>
                     </div>
                 </div>
-            </div>
+
             </div>
 
             </div>
