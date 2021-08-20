@@ -452,8 +452,7 @@
 
 
 <!-- Contact Section Start -->
-@if ($section_arr['contact_section'] == 1)
-    @if (isset($contact_section) || count($contacts) > 0)
+
         <section id="contact" class="contact-section pdt-110 pdb-95 pdb-lg-90"
                  data-background="" data-scroll-index="6">
             <div class="container">
@@ -735,8 +734,7 @@
         <div class="contact-section">
 
         </div>
-    @endif
-@endif
+
 <!-- Contact Section End -->
 
 <!-- Footer Area Start -->

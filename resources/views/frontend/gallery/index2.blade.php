@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <div class="page-title-content">
-                        <h3 class="title text-white">Sıkça Sorulan Sorular</h3>
+                        <h3 class="title text-black">Sıkça Sorulan Sorular</h3>
 
                     </div>
 
@@ -21,9 +21,8 @@
     </section>
     <!-- Page Title End -->
 
+    <div style="background-color:#f5fafa">
 
-
-    <!-- Page content End -->
 <div class="container">
     <div id="accordion" style="padding-bottom: 100px;padding-top: 100px">
         <div class="card">
@@ -122,4 +121,6 @@
     </div>
         <!-- Page content End -->
 </div>
+</div>
+    <!-- Page content End -->
 @endsection

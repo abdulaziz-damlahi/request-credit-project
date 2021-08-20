@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <div class="page-title-content">
-                        <h3 class="title text-white">Krediyi Nasıl Alırım?</h3>
+                        <h3 class="title text-black">Krediyi Nasıl Alırım?</h3>
 
                     </div>
 
@@ -19,7 +19,8 @@
         </div>
     </section>
     <!-- Page Title End -->
-    <div class="container" style="padding-top: 100px;padding-bottom: 100px">
+    <div style="background-color:#f5fafa">
+    <div class="container" style="padding-top: 100px;padding-bottom: 100px;background-color: white">
         <div class="sayfa_ici">
             <p>İlk olarak başvuru kısımından kredi başvurunuzu sağlamalısınız.</p>
             <div class="row">
@@ -72,5 +73,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 @endsection
